@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@-webkit-keyframes img {
+    from { -webkit-transform: skewy(0deg); }
+    to   { -webkit-transform: skewY(180deg); }
+  }
+  
+  @keyframes img {
+    from { transform: skewY(0deg); }
+    to   { transform: skewY(180deg); }
+  }
+
+@font-face{
+    font-family: Rubik;
+    src: url(./Asset/Rubik/static/Rubik-Black.ttf);
+}
+
+body,input{
+    font-family: Meow, cursive;
+    font-size: 1em;
+}
+nav{
+    background-color: aqua;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 20px,
+        rgb(5, 89, 145) 20px,
+        rgb(6, 133, 133) 40px
+      );
+      text-align: center;
+}
+a{
+    color: black;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: blue;
+    text-decoration: overline;
+}
+a:active{
+    color: white;
+}
+h1{
+    position: relative;
+    color: red;
+    text-decoration: underline;
+    font-style: bold;
+    left: 20%;
+}
+
+h2{
+    position: relative;
+    color: green;
+    text-decoration: underline dashed black;
+    font-style: italic;
+    left: 40%;
+}
+
+h3{
+    position: relative;
+    color: rgb(139, 18, 139);
+    text-decoration: overline double gold;
+    left: 60%;
+}
+.container_center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Florent{
+    width: 200px;
+}
+
+.Florent:hover{
+  -webkit-animation-name: img;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: reverse;
+  -webkit-animation-delay: 0s;
+
+  animation-name: img;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-delay: 0s;
+}
+figcaption{
+    font-style: italic;
+    font-size: 0.5em;
+}
+ul{
+    list-style-type: square;
+}
+li{
+    color: rgb(230, 182, 190);
+}
+ol{
+    list-style-type: upper-roman;
+}
+.dessert{
+    position: relative;
+    left: 20%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;}
+
+tr,td,th{
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid black;
+    }
+
+th{
+        background-color: pink;
+        font-style: italic;
+        color: gray;
+    }
+.green{
+        color: green;
+    }
+.yellow{
+        color: rgb(148, 148, 13);
+    }
+form{
+        text-align: center;
+    }
+
+textarea{
+    resize: none;
+    background: rgb(138, 240, 138);
+    width: 500px;
+    height: 20px;
+}
+textarea:hover{
+    border-radius: 40px;
+    background: none;
+    width: 1000px;
+    height: 40px;
+    transition-duration: 5s;
+}
+.center{
+    position: relative;
+    left: 50%;
+}
+header,section,article,details,footer{
+    background: aquamarine;
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+header:hover{
+	border-radius:40px 30px 20px 10px;
+	transition-duration: 10s;
+	background:blue;
+	border:0px solid black
+}
+section{
+    background: chocolate;
+}
+
+article{
+    width: 80%;
+    text-align: start;
+    background: cadetblue;
+}
+details{
+    border: none;
+    width: 50%;
+    background: rgb(111, 183, 185);
+}
+
+footer{
+    text-align: end;
+    background: wheat;
+}
+option{
+    color: blue;
+    font-style: italic;
+}
+
+.red{
+    background-color: red;
+}

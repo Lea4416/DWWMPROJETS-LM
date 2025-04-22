@@ -1,0 +1,71 @@
+body{
+    background-color: rgba(0, 255, 162, 0.137);
+    color: blue;
+}
+header{
+    display: flex;
+    /* border: 1px black solid; */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;}
+h1{
+    color: red;
+    text-decoration: underline overline;
+}
+h1::before{
+    content: "👀";
+}
+h1::after{
+    content: "👋 ";
+}
+.main_flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.hover{
+    display: none;
+}
+.main_flex:hover .hover{
+    display: inline;
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 200px;
+    margin: 50px 0px;
+}
+
+a:hover{
+    color: chocolate;
+}
+
+a:visited{
+    color: green;
+}
+.grid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.statique, .Empty_1, .Empty_2{
+    padding: 20px 200px;
+    border: 1px dotted black;
+}
+
+.statique{
+    background-color: yellow;
+}
+
+.Empty_1, .Empty_2{
+    background-color: rgba(128, 128, 128, 0.425);
+}
+
+footer{
+    text-align: center;
+}
