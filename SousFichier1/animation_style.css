@@ -1,0 +1,106 @@
+@keyframes slide {
+    from { 
+        margin-left: 0%;
+    } to{
+        margin-left: 100%;
+    }
+}
+
+@keyframes ascenceur {
+    from { 
+        bottom: 100%;
+    } to{
+        bottom: 0%;
+    }
+}
+
+@keyframes carré{
+    from{
+        top : 20%;
+        left: 35%;
+    }25%{
+        top : 20%;
+        left: 90%;
+    }50%{
+        top : 90%;
+        left: 90%;
+    }75%{
+        top : 90%;
+        left: 35%;
+    }
+
+}
+
+@keyframes fuite{
+    from{
+        left: 40%;
+    }to{
+        left: 500%;
+    }
+}
+
+h1{
+    color: red;
+    text-decoration: underline;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cercle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px black dotted;
+    background: aquamarine;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.image_chien{
+    position: absolute;
+    animation-name: ascenceur;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+.texte_carré{
+    position: absolute;
+    top : 20%;
+    left: 35%;
+    animation-name: carré;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+.image_skate{
+    position: absolute;
+    top : 25%;
+    left: 40%;
+    width: 500px;
+}
+
+.image_skate:hover{
+    animation-name: fuite;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.blague{
+    position: absolute;
+    top : 25%;
+    left: 40%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

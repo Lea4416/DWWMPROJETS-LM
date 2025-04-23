@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/Asset/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
 body{
     background-color: rgba(0, 255, 162, 0.137);
     color: blue;
+    font-family: Roboto;
+    font-size: 1rem;
 }
 header{
     display: flex;
@@ -53,13 +62,22 @@ a:visited{
     justify-items: center;
 }
 
-.statique, .Empty_1, .Empty_2{
-    padding: 20px 200px;
+.statique, .animation, .Empty_2{
+    width: 200px;
+    height: 100px;
     border: 1px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .statique{
     background-color: yellow;
+}
+
+.animation{
+    background: greenyellow;
 }
 
 .Empty_1, .Empty_2{
@@ -67,5 +85,9 @@ a:visited{
 }
 
 footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: underline;
+    font-style: italic;
 }
